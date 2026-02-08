@@ -4,7 +4,7 @@
 <head>
   <meta name="description" content="Webpage description goes here" />
   <meta charset="utf-8">
-  <title>Change_me</title>
+  <title>SIT Accounting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
   <link rel="stylesheet" href="style.css">
@@ -12,10 +12,27 @@
 
 <body>
   
-<h1>hi</h1>
+<div class="main-view">
+  <div class="nav-bar">
+    <img class="nav-bar-left" src="assets/logo-half.svg" alt="SIT Accounting">
+    <div class="nav-bar-right">
+      <a class="tab active" href="#home" onclick="setActive(event, this)">Home</a>
+      <a class="tab" href="#about" onclick="setActive(event, this)">About Me</a>
+      <a class="tab" href="#services" onclick="setActive(event, this)">Services</a>
+    </div>
+  </div>
+  <section id="home">
+    <p>home</p>
+  </section>
+  <section id="about">
+    <p>about</p>
+  </section>
+  <section id="services">
+    <p>services</p>
+  </section>
+</div>
 
-<script>
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
