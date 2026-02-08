@@ -1,10 +1,31 @@
-.main-view {
-    padding: 10px 200px;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Martel";
+    scroll-behavior: smooth;
+    background-color: #F8F8FF;
 }
+
+/* .main-view {
+    
+} */
 
 .nav-bar {
     display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    background-color: #F8F8FF;
+}
+
+.nav-container {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin: 0 400px;
 }
 
 .nav-bar-left {
@@ -16,13 +37,19 @@
     gap: 3px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .tab {
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 8px 15px;
+    height: 20px;
     text-decoration: none; /* no link underline */
-    color: black;
+    color: #333;
+    font-size: small;
     border: 2px solid transparent;
 }
 
@@ -36,4 +63,55 @@
     border: 2px solid #537D5D;
     border-radius: 5px;
     color: #537D5D;
+}
+
+#home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url("assets/accountant-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.home-container {
+    height: 50%;
+    width: 100%;
+    margin: 320px 400px 0px 400px; /* top | right | bottom | left */
+    color: white;
+}
+
+.home-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.home-body {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* headers for each section */
+h4 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: #73946B;
+}
+
+#about {
+    margin: 50px 400px 50px 400px;
+}
+
+#services {
+    margin: 50px 400px 50px 400px;
+}
+
+#contact {
+    margin: 50px 400px 50px 400px;
 }
