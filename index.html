@@ -19,13 +19,21 @@
     <div class="nav-container">
       <img class="nav-bar-left" src="assets/logo-half.svg" alt="SIT Accounting">
       <ul class="nav-bar-right">
-        <li><a class="tab active" href="#home" onclick="setActive(event, this)">Home</a></li>
-        <li><a class="tab" href="#about" onclick="setActive(event, this)">About</a></li>
-        <li><a class="tab" href="#services" onclick="setActive(event, this)">Services</a></li>
-        <li><a class="tab" href="#contact" onclick="setActive(event, this)">Contact</a></li>
+        <li><a class="tab active" href="#home" onclick="setActive(this)">Home</a></li>
+        <li><a class="tab" href="#about" onclick="setActive(this)">About</a></li>
+        <li><a class="tab" href="#services" onclick="setActive(this)">Services</a></li>
+        <li><a class="tab" href="#contact" onclick="setActive(this)">Contact</a></li>
       </ul>
-      <!-- <button class="hamburger-icon" id="hamburger-toggle">☰</button> -->
+      <button class="hamburger-icon" id="hamburger-toggle" onclick="toggleNav()">☰</button>
     </div>
+  </div>
+  <div id="vertical-nav-container">
+    <ul>
+      <li><a href="#home" onclick="closeNav()">Home</a></li>
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#services" onclick="closeNav()">Services</a></li>
+      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    </ul>
   </div>
   <section id="home">
     <div class="home-container">
@@ -33,6 +41,7 @@
       <p class="home-body">
         Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today!
       </p>
+      <a class="contact-button" href="#contact">Contact Us</a>
     </div>
   </section>
   <section id="about">

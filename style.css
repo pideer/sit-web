@@ -1,26 +1,5 @@
-/* breakpoints for different screen sizes */
-@media (min-width: 320px) {
-    body {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        font-size: 24px;
-    }
-    .nav-bar-right {
-        display: flex;
-    }
-    .hamburger-icon {
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        font-size: 28px;
-    }
+:root {
+  --horiz-margin: 1.75em;
 }
 
 html, body {
@@ -47,13 +26,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0 20%;
+    margin: 0 var(--horiz-margin);
     line-height: 0;
 }
 
 .nav-bar-left {
     height: auto;
-    width: 3.5em;
+    width: 5em;
 }
 
 .nav-bar-right {
@@ -70,9 +49,9 @@ ul {
     background-color: transparent;
     margin: 0;
     padding: 0.5em 1em;
-    text-decoration: none; /* no link underline */
+    text-decoration: none;
     color: #333;
-    font-size: small;
+    font-size: 0.5em;
     border: 2px solid transparent;
 }
 
@@ -90,6 +69,35 @@ ul {
 
 .hamburger-icon {
     display: block;
+    background-color: #F8F8FF;
+    color: #537D5D;
+    border: 2px solid #537D5D;
+    border-radius: 8px;
+}
+
+#vertical-nav-container {
+    display: none;
+    position: fixed;
+    top: 2.5em;
+    width: 100vw;
+    background-color: #F8F8FF;
+    font-size: 0.75em;
+}
+
+#vertical-nav-container ul {
+    margin-bottom: 0;
+}
+
+#vertical-nav-container li {
+    padding: 0.5em 1em;
+    border-top: 2px solid #D3D3D3;
+    font-size: 0.75em;
+}
+
+#vertical-nav-container a {
+    display: block;
+    color: #808080;
+    text-decoration: none;
 }
 
 /* headers for each section */
@@ -98,6 +106,10 @@ h4 {
     font-size: 1em;
     font-weight: 800;
     color: #73946B;
+}
+
+p {
+    font-size: 0.5em;
 }
 
 /* --- Home Section --- */
@@ -117,36 +129,73 @@ h4 {
 .home-container {
     height: 50%;
     width: 100%;
-    margin: 12em 20% 0em 20%; /* top | right | bottom | left */
+    margin: 30vh var(--horiz-margin); /* top | right | bottom | left */
     color: white;
 }
 
 .home-header {
-    margin-top: 0;
-    margin-bottom: 0.25em;
+    margin: 0;
     font-size: 1.75em;
     font-weight: 800;
 }
 
 .home-body {
-    margin: 0;
     font-size: 0.75em;
+}
+
+.contact-button {
+    background-color: #537D5D;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #F8F8FF;
+    font-size: 0.65em;
+    font-weight: 700;
+    border-radius: 8px;
 }
 
 /* --- About Section --- */
 
 #about {
-    margin: 1.75em 20% 1.75em 20%;
+    margin: 1.75em var(--horiz-margin);
 }
 
 /* --- Services Section --- */
 
 #services {
-    margin: 1.75em 20% 1.75em 20%;
+    margin: 1.75em var(--horiz-margin);
 }
 
 /* --- Contact Section --- */
 
 #contact {
-    margin: 1.75em 20% 1.75em 20%;
+    margin: 1.75em var(--horiz-margin);
+}
+
+/* --- Breakpoints for different screen sizes --- */
+
+@media (min-width: 320px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 24px;
+    }
+    :root {
+        --horiz-margin: 22%;
+    }
+    .nav-bar-right {
+        display: flex;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 28px;
+    }
 }
