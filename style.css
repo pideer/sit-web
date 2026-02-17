@@ -185,6 +185,30 @@ p {
     margin: 1.75em var(--horiz-margin);
 }
 
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 0.5em 0;
+}
+
+.service-card {
+    background-color: white;
+    padding: 1em;
+    border: 2px solid #D3D3D3;
+    border-radius: 8px;
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.service-name {
+    border-bottom: 2px solid #D3D3D3;
+}
+
 /* --- Contact Section --- */
 
 #contact {
@@ -229,6 +253,9 @@ footer a {
     }
     .hamburger-icon {
         display: none;
+    }
+    .services-container {
+        flex-direction: row;
     }
 }
 
