@@ -2,20 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Webpage description goes here" />
   <meta charset="utf-8">
-  <title>Change_me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="style.css">
+
+  <title>Under Construction</title>
+  <meta name="description" content="Business and Personal Accounting Services for the Virginia and Maryland Area" />
 </head>
 
 <body>
-  
-<h1>404</h1>
-
-<script>
-</script>
-
+  <img src="assets/logo-full.svg" alt="SIT Accounting" width="300px">
+  <div class="container">
+    <h1>404</h1>
+    <div class="text">
+      <h2>Hmm, we couldn't find that page</h2>
+      <p>For website-related issues, please <a href="mailto:mailto:web@sitaccounting.com">email us</a>.</p>
+      <a class="btn" href="/">Go Home</a>
+    </div>
+  </div>
 </body>
+
+<style>
+  :root {
+    --horiz-margin: 1.75em;
+    --primary-color: #537D5D;
+    --secondary-color: #73946B;
+    --background-color: #F8F8FF;
+    --bg-secondary: #E8E7E3;
+    --link-color: ;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-secondary);
+    color: #333;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 10rem;
+  }
+
+  h2 {
+    margin: 0 1rem;
+  }
+  
+  img {
+    margin-top: 8em;
+    padding-bottom: 2em;
+  }
+
+  p {
+    line-height: 1.6em;
+    margin: .5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  .btn {
+    background-color: var(--primary-color);
+    padding: 1em 1.25em;
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 0.85em;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: .5rem 1rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding-top: 2rem;
+    }
+
+    img {
+      max-width: 150px;
+      padding-bottom: 2em;
+    }
+  }
+</style>
+
 </html>
