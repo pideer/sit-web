@@ -169,6 +169,7 @@ p {
 
 #about {
     margin: 1.75em var(--horiz-margin);
+    scroll-margin-top: 2.5em;
 }
 
 #about ul {
@@ -183,6 +184,7 @@ p {
 
 #services {
     margin: 1.75em var(--horiz-margin);
+    scroll-margin-top: 2.5em;
 }
 
 .services-container {
@@ -212,7 +214,21 @@ p {
 /* --- Contact Section --- */
 
 #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
     margin: 1.75em var(--horiz-margin);
+    scroll-margin-top: 2.5em;
+}
+
+#contact p {
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 /* --- Footer --- */
