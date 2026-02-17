@@ -1,62 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta name="description" content="Webpage description goes here" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHH9B3M6G2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XHH9B3M6G2');
+</script>
   <meta charset="utf-8">
-  <title>SIT Accounting</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
+  <title>SIT Accounting Services, LLC</title>
+  <meta name="description" content="SIT Accounting Services, providing business and personal accounting Services for the Virginia and Maryland area. We offer Tax-preparation and "/>
+  <link rel="canonical" href="https://sitaccounting.com/">
+  <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "Organization",
+      "name" : "SIT Accounting Services, LLC",
+      "logo": "https://sitaccounting.com/assets/logo-half.svg"
+      "description": "Providing business and personal accounting Services for the Virginia and Maryland area.",
+      "url" : "https://sitaccounting.com/"
+    }
+  </script>
+  <meta http-equiv="content-language" content="en-us">
+
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-<div class="main-view">
-  <div class="nav-bar">
-    <div class="nav-container">
-      <img class="nav-bar-left" src="assets/logo-half.svg" alt="SIT Accounting">
-      <ul class="nav-bar-right">
-        <li><a class="tab active" href="#home" onclick="setActive(this)">Home</a></li>
-        <li><a class="tab" href="#about" onclick="setActive(this)">About</a></li>
-        <li><a class="tab" href="#services" onclick="setActive(this)">Services</a></li>
-        <li><a class="tab" href="#contact" onclick="setActive(this)">Contact</a></li>
+  <nav role="navigation">
+    <div class="nav-bar">
+      <div class="nav-container">
+        <img class="nav-bar-left" src="assets/logo-half.svg" alt="SIT Accounting">
+        <ul class="nav-bar-right">
+          <li><a class="tab active" href="#home" onclick="setActive(this)">Home</a></li>
+          <li><a class="tab" href="#about" onclick="setActive(this)">About</a></li>
+          <li><a class="tab" href="#services" onclick="setActive(this)">Services</a></li>
+          <li><a class="tab" href="#contact" onclick="setActive(this)">Contact</a></li>
+        </ul>
+        <button class="hamburger-icon" onclick="toggleNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="21"
+            viewBox="0 0 448 512"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path fill="#537d5dff"
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="vertical-nav-container">
+      <ul>
+        <li><a href="#home" onclick="closeNav()">Home</a></li>
+        <li><a href="#about" onclick="closeNav()">About</a></li>
+        <li><a href="#services" onclick="closeNav()">Services</a></li>
+        <li><a href="#contact" onclick="closeNav()">Contact</a></li>
       </ul>
-      <button class="hamburger-icon" id="hamburger-toggle" onclick="toggleNav()">☰</button>
     </div>
-  </div>
-  <div id="vertical-nav-container">
-    <ul>
-      <li><a href="#home" onclick="closeNav()">Home</a></li>
-      <li><a href="#about" onclick="closeNav()">About</a></li>
-      <li><a href="#services" onclick="closeNav()">Services</a></li>
-      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
-    </ul>
-  </div>
-  <section id="home">
-    <div class="home-container">
-      <h3 class="home-header">Confident Accounting for Business and Personal Clients</h3>
-      <p class="home-body">
-        Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today!
+  </nav>
+
+  <main role="main">
+    <section id="home">
+      <div class="home-container">
+        <h3 id="home-header">Confident Accounting for Business and Personal Clients</h3>
+        <p id="home-body">
+          Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today!
+        </p>
+        <a class="contact-button" href="#contact">Contact Us</a>
+      </div>
+    </section>
+    <section id="about">
+      <h4>About</h4>
+      <p>
+        SIT Accounting Services began in 2008 with a passion for helping low-income individuals accurately and confidently 
+        file their tax returns. What began as a mission to serve individuals in need has grown into a full-service accounting 
+        firm supporting businesses, entrepreneurs, and high-income clients with comprehensive tax preparation and financial 
+        services.
       </p>
-      <a class="contact-button" href="#contact">Contact Us</a>
-    </div>
-  </section>
-  <section id="about">
-    <h4>About</h4>
-    <p>text</p>
-  </section>
-  <section id="services">
-    <h4>Services</h4>
-  </section>
-  <section id="contact">
-    <h4>Contact</h4>
-  </section>
-</div>
+      <p>
+        Over the years, we have remained committed to personalized service, integrity, and financial clarity for every client 
+        we serve.
+      </p>
+      <h5>Experience & Values</h5>
+      <ul>
+        <li>MBA in Finance & Accounting - University of Maryland</li>
+        <li>CPA licensed since 2005</li>
+      </ul>
+    </section>
+    <section id="services">
+      <h4>Services</h4>
+    </section>
+    <section id="contact">
+      <h4>Contact</h4>
+    </section>
+  </main>
 
-<script src="app.js"></script>
+  <footer role="contentinfo">
+    <p>© 2026 SIT Accounting Services, LLC. Made with love by the kids ❤️. Issues? Email us at
+      <a href="mailto:web@sitaccounting.com">web@sitaccounting.com</a>
+    </p>
+  </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,3 +1,25 @@
+/* Changes main text based on date. */
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.getElementById("home-header");
+    const body = document.getElementById("home-body");
+
+    const today = new Date();
+    const beforeDate = new Date(today.getFullYear(), 0, 1); // jan 1
+    const afterDate = new Date(today.getFullYear(), 3, 15) // apr 15
+    today.setHours(0, 0, 0, 0);
+    beforeDate.setHours(0, 0, 0, 0);
+    afterDate.setHours(0, 0, 0, 0);
+
+    if (today < beforeDate || today > afterDate) {
+        header.innerHTML = "Confident Accounting for Business and Personal Clients";
+        body.innerHTML = "Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today!";
+    } else {
+        header.innerHTML = `Get Ahead of the ${today.getFullYear()} Tax Season`
+        body.innerHTML = `Prepare for the upcoming ${today.getFullYear()} tax year and contact us to get started!`
+    }
+});
+
+
 /* Changes active tab from navigation bar. */
 setActive = (currentElement) => {
     const currentActive = document.querySelector('.active');

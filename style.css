@@ -1,5 +1,10 @@
 :root {
   --horiz-margin: 1.75em;
+  --primary-color: #537D5D;
+  --secondary-color: #73946B;
+  --background-color: #F8F8FF;
+  --bg-secondary: #E8E7E3;
+  --link-color: ;
 }
 
 html, body {
@@ -7,7 +12,7 @@ html, body {
     padding: 0;
     font-family: "Martel";
     scroll-behavior: smooth;
-    background-color: #F8F8FF;
+    background-color: var(--background-color);
 }
 
 /* --- Navigation Bar --- */
@@ -19,7 +24,7 @@ html, body {
     z-index: 100;
     height: 2.5em;
     width: 100%;
-    background-color: #F8F8FF;
+    background-color: var(--background-color);
 }
 
 .nav-container {
@@ -38,9 +43,6 @@ html, body {
 .nav-bar-right {
     display: none;
     gap: 0.1em;
-}
-
-ul {
     list-style-type: none;
     padding: 0;
 }
@@ -56,23 +58,23 @@ ul {
 }
 
 .tab:hover {
-    border: 2px solid #537D5D;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
-    color: #537D5D;
+    color: var(--primary-color);
 }
 
 .active {
-    border: 2px solid #537D5D;
+    border: 2px solid var(--primary-color);
     border-radius: 8px;
-    color: #537D5D;
+    color: var(--primary-color);
 }
 
 .hamburger-icon {
-    display: block;
-    background-color: #F8F8FF;
-    color: #537D5D;
-    border: 2px solid #537D5D;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: none;
 }
 
 #vertical-nav-container {
@@ -80,12 +82,14 @@ ul {
     position: fixed;
     top: 2.5em;
     width: 100vw;
-    background-color: #F8F8FF;
+    background-color: var(--background-color);
     font-size: 0.75em;
 }
 
 #vertical-nav-container ul {
     margin-bottom: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 #vertical-nav-container li {
@@ -103,9 +107,17 @@ ul {
 /* headers for each section */
 h4 {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 800;
-    color: #73946B;
+    color: var(--secondary-color);
+}
+
+/* subheaders within sections */
+h5 {
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 800;
+    color: var(--secondary-color);
 }
 
 p {
@@ -129,25 +141,25 @@ p {
 .home-container {
     height: 50%;
     width: 100%;
-    margin: 30vh var(--horiz-margin); /* top | right | bottom | left */
-    color: white;
+    margin: 35vh var(--horiz-margin);
+    color: var(--background-color);
 }
 
-.home-header {
+#home-header {
     margin: 0;
     font-size: 1.75em;
     font-weight: 800;
 }
 
-.home-body {
+#home-body {
     font-size: 0.75em;
 }
 
 .contact-button {
-    background-color: #537D5D;
-    padding: 0.5em 1em;
+    background-color: var(--primary-color);
+    padding: 0.75em 1.25em;
     text-decoration: none;
-    color: #F8F8FF;
+    color: var(--background-color);
     font-size: 0.65em;
     font-weight: 700;
     border-radius: 8px;
@@ -157,6 +169,14 @@ p {
 
 #about {
     margin: 1.75em var(--horiz-margin);
+}
+
+#about ul {
+    margin: 0.5em 0;
+}
+
+#about li {
+    font-size: 0.5em;
 }
 
 /* --- Services Section --- */
@@ -169,6 +189,24 @@ p {
 
 #contact {
     margin: 1.75em var(--horiz-margin);
+}
+
+/* --- Footer --- */
+
+footer {
+    margin: 0;
+    padding: 1.75em 1em;
+    color: #808080;
+    background-color: var(--bg-secondary);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: var(--primary-color);
 }
 
 /* --- Breakpoints for different screen sizes --- */
