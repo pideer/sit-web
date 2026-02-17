@@ -2,54 +2,55 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Business and Personal Accounting Services for the Virginia and Maryland Area" />
   <meta charset="utf-8">
-  <title>Under Construction</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta name="description" content="Business and Personal Accounting Services for the Virginia and Maryland Area" />
+  <title>Under Construction</title>
+
 </head>
 
 <body>
-  <div class="container">
-    <img src="assets/logo-full.svg" alt="Company Logo">
+    <img src="assets/logo-full.svg" alt="SIT Accounting Logo">
     <div class="text">
       <h1>Our site is under maintenance</h1>
       <p>We're currently updating our website to better serve you. We'll be back online shortly. For assistance with tax
-        preparation or other CPA services, please <a href="mailto:sit727@gmail.com">email us</a>. For website-related inquiries, contact
-        <a href="mailto:web@sitaccounting.com">web@sitaccounting.com</a>.</p>
+        preparation or other CPA services, please <a href="mailto:sit727@gmail.com">email us</a>. For website-related
+        inquiries, contact
+        <a href="mailto:web@sitaccounting.com">web@sitaccounting.com</a>.
+      </p>
       <p>Thank you for your patience.</p>
     </div>
-  </div>
 </body>
 
 <style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+  :root {
+    --horiz-margin: 1em;
+    --primary-color: #537D5D;
+    --secondary-color: #73946B;
+    --background-color: #F8F8FF;
+    --bg-secondary: #E8E7E3;
+    --link-color: #537D5D;
   }
 
-  .container {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-secondary);
+    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 var(--horiz-margin);
     gap: 3rem;
   }
-  
+
   img {
-    flex: 1;
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+    width: 300px;
   }
 
   .text {
     flex: 1;
+    max-width: 600px;
   }
 
   h1 {
@@ -62,11 +63,14 @@
     margin-bottom: 1rem;
   }
 
-  a { color: #537d5d; text-decoration: none; }
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
 
   /* Mobile */
   @media (max-width: 800px) {
-    .container {
+    body {
       flex-direction: column;
       text-align: center;
       height: auto;
@@ -74,8 +78,9 @@
     }
 
     img {
-      max-width: 220px;
+      width: 220px;
     }
   }
 </style>
+
 </html>

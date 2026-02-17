@@ -1,9 +1,15 @@
-sit accounting website
+# SIT Accounting "Under Maintenance" Static Website Page
 
-# TODO:
-- services in [content.md](./docs/content.md)
+Production: [sitaccounting.com](https://sitaccounting.com)
 
-# Ask mother
-- do you use voip? mask phone number
-- detailed list of services provided + client demographic
-- what certifications?
+## Description
+
+- Static single-page website 
+- built with HTML/CSS/JS 
+- no backend
+- hosted with cloudflare pages (rip if theres another outage)
+- temporary page
+
+## License
+
+You can use it as inspiration and fork but please do not copy content or images not already royalty-free or free to use.
