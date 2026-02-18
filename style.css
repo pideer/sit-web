@@ -1,10 +1,9 @@
 :root {
-  --horiz-margin: 1.75em;
+  --horiz-margin: 1.25em;
   --primary-color: #537D5D;
   --secondary-color: #73946B;
   --background-color: #F8F8FF;
   --bg-secondary: #E8E7E3;
-  --link-color: ;
 }
 
 html, body {
@@ -12,6 +11,7 @@ html, body {
     padding: 0;
     font-family: "Martel";
     scroll-behavior: smooth;
+    color: #333;
     background-color: var(--background-color);
 }
 
@@ -22,7 +22,7 @@ html, body {
     align-items: center;
     position: fixed;
     z-index: 100;
-    height: 2.5em;
+    height: 3em;
     width: 100%;
     background-color: var(--background-color);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ html, body {
     padding: 0.5em 1em;
     text-decoration: none;
     color: #333;
-    font-size: 0.5em;
+    font-size: 0.65em;
     border: 2px solid transparent;
 }
 
@@ -80,7 +80,7 @@ html, body {
 
 .vertical-nav-container {
     position: fixed;
-    top: 2.5em;
+    top: 3em;
     width: 100vw;
     background-color: var(--background-color);
     font-size: 0.75em;
@@ -106,7 +106,7 @@ html, body {
 .vertical-nav-container li {
     padding: 0.5em 1em;
     border-top: 2px solid #D3D3D3;
-    font-size: 0.75em;
+    font-size: 0.85em;
 }
 
 .vertical-nav-container a {
@@ -126,19 +126,22 @@ h4 {
 /* subheaders within sections */
 h5 {
     margin: 0;
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 800;
     color: var(--secondary-color);
 }
 
 p {
-    font-size: 0.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 0.75em;
 }
 
 /* --- Home Section --- */
 
 #home {
     display: flex;
+    align-items: center;
     height: 100vh;
     width: 100%;
     background: 
@@ -150,20 +153,20 @@ p {
 }
 
 .home-container {
-    height: 50%;
+    height: fit-content;
     width: 100%;
-    margin: 35vh var(--horiz-margin);
+    margin: 0 var(--horiz-margin);
     color: var(--background-color);
 }
 
 #home-header {
     margin: 0;
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: 800;
 }
 
 #home-body {
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 .contact-button {
@@ -171,7 +174,7 @@ p {
     padding: 0.75em 1.25em;
     text-decoration: none;
     color: var(--background-color);
-    font-size: 0.65em;
+    font-size: 0.75em;
     font-weight: 700;
     border-radius: 8px;
 }
@@ -180,7 +183,7 @@ p {
 
 #about {
     margin: 1.75em var(--horiz-margin);
-    scroll-margin-top: 2.5em;
+    scroll-margin-top: 3em;
 }
 
 #about ul {
@@ -188,21 +191,21 @@ p {
 }
 
 #about li {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 /* --- Services Section --- */
 
 #services {
     margin: 1.75em var(--horiz-margin);
-    scroll-margin-top: 2.5em;
+    scroll-margin-top: 3em;
 }
 
 .services-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
-    margin: 0.5em 0;
+    gap: 1em;
+    margin-bottom: 1em;
 }
 
 .service-card {
@@ -227,9 +230,8 @@ p {
 #contact {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
     margin: 1.75em var(--horiz-margin);
-    scroll-margin-top: 2.5em;
+    scroll-margin-top: 3em;
 }
 
 #contact p {
@@ -240,6 +242,7 @@ p {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    margin-top: 0.5em;
 }
 
 /* --- Footer --- */
@@ -262,32 +265,32 @@ footer a {
 
 /* --- Breakpoints for different screen sizes --- */
 
-@media (min-width: 320px) {
+/* default is mobile view */
+/* 480-768px is tablet view */
+/* 1025px+ is desktop view */
+
+@media (min-width: 480px) {
     body {
         font-size: 20px;
     }
-}
 
-@media (min-width: 768px) {
-    body {
-        font-size: 24px;
-    }
-    :root {
-        --horiz-margin: 22%;
-    }
     .nav-bar-right {
         display: flex;
     }
     .hamburger-icon {
         display: none;
     }
+
     .services-container {
         flex-direction: row;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
     body {
-        font-size: 28px;
+        font-size: 20px;
+    }
+    :root {
+        --horiz-margin: 22%;
     }
 }
