@@ -78,28 +78,38 @@ html, body {
     border: none;
 }
 
-#vertical-nav-container {
-    display: none;
+.vertical-nav-container {
     position: fixed;
     top: 2.5em;
     width: 100vw;
     background-color: var(--background-color);
     font-size: 0.75em;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none; /* prevents clicking when hidden */
 }
 
-#vertical-nav-container ul {
+.vertical-nav-container.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.vertical-nav-container ul {
     margin-bottom: 0;
     list-style-type: none;
     padding: 0;
 }
 
-#vertical-nav-container li {
+.vertical-nav-container li {
     padding: 0.5em 1em;
     border-top: 2px solid #D3D3D3;
     font-size: 0.75em;
 }
 
-#vertical-nav-container a {
+.vertical-nav-container a {
     display: block;
     color: #808080;
     text-decoration: none;

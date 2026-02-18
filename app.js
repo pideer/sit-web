@@ -53,17 +53,21 @@ setActive = (currentElement) => {
 /* Toggles display of the hamburger menu. */
 toggleNav = () => {
     const nav = document.getElementById('vertical-nav-container');
-    const display = window.getComputedStyle(nav).display;
+    const navBar = document.getElementById('nav-bar');
 
-    if (display == 'none') {
-        nav.style.display = 'block';
-    } else if (display == 'block') {
-        nav.style.display = 'none';
+    nav.classList.toggle('open');
+
+    // adjust box shadow
+    if (nav.classList.contains('open')) {
+        navBar.style.boxShadow = 'none';
+        nav.style.boxShadow = '2px 2px 6px rgba(0, 0, 0, 0.1)';
+    } else {
+        navBar.style.boxShadow = '2px 2px 6px rgba(0, 0, 0, 0.1)';
     }
 };
 
 /* Closes the hamburger menu. */
 closeNav = () => {
     const nav = document.getElementById('vertical-nav-container');
-    nav.style.display = 'none';
+    nav.classList.remove('open');
 };
