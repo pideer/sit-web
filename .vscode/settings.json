@@ -1,5 +1,7 @@
 {
-    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+    "livePreview.autoRefreshPreview": "Never",
     "livePreview.hostIP": "127.0.0.1",
-    "livePreview.serverRoot": "/public"
+    "livePreview.serverRoot": "/public",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
 }
