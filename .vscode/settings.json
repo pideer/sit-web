@@ -1,5 +1,5 @@
 {
-    "livePreview.autoRefreshPreview": "Never",
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
     "livePreview.hostIP": "127.0.0.1",
     "livePreview.serverRoot": "/public",
     "editor.formatOnSave": true,
