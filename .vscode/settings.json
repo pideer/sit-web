@@ -1,0 +1,5 @@
+{
+    "livePreview.defaultPreviewPath": "",
+    "livePreview.serverRoot": "/public",
+    "editor.formatOnSave": true
+}
