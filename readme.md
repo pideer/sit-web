@@ -23,6 +23,7 @@ You can use it as inspiration and fork but please do not copy content or images 
 - [ ] complete seo data with [instructions](https://developers.google.com/search/docs/appearance/structured-data/organization)
 - [ ] claim business online from [research](/docs/research.md)
 - [ ] responsive images (hero) and resize
+- [ ] check if telephone number works + update for voip number
 
 ## Ask mother
 - do you use voip? mask phone number
