@@ -23,9 +23,9 @@ We have been CPA licensed since 2005, providing professional expertise to prepar
 # Services
 ## Business
 
-- bookkeeping: 
-- payroll:
-- tax preparation: 
+- bookkeeping: Keep your financial records organized and up to date with accurate bookkeeping services tailored to your business needs. We help track income, expenses, and transactions so you can focus on running your business.
+- payroll: Professional tax preparation services for individuals and businesses designed to maximize accuracy and minimize stress. We stay current with tax regulations to help ensure your returns are filed correctly and on time.
+- tax preparation: Simplify payroll with reliable processing and employee payment solutions for businesses of all sizes. We handle payroll calculations, tax withholdings, and reporting so your team gets paid accurately and on schedule.
 
 ## Individual
 
