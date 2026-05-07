@@ -1,4 +1,5 @@
 :root {
+  --vert-margin: 2.5em;
   --horiz-margin: 1.25em;
   --primary-color: #537D5D;
   --secondary-color: #73946B;
@@ -163,28 +164,37 @@ p {
 
 #home-header {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 800;
 }
 
 #home-body {
     font-size: 1em;
+    margin-bottom: 2em;
 }
 
 .contact-button {
     background-color: var(--primary-color);
-    padding: 0.75em 1.25em;
+    padding: 0.5em 1.25em;
     text-decoration: none;
     color: var(--background-color);
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 700;
     border-radius: 8px;
+    transition: filter 0.3s ease;
+}
+
+.contact-button:hover {
+    filter: brightness(0.85);
 }
 
 /* --- About Section --- */
 
 #about {
-    margin: 1.75em var(--horiz-margin);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: var(--vert-margin) var(--horiz-margin);
     scroll-margin-top: 3em;
 }
 
@@ -196,10 +206,24 @@ p {
     font-size: 0.75em;
 }
 
+.about-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 19em;
+    height: auto;
+    clip-path: inset(0 0 25% 0);
+    display: block;
+    margin-bottom: -25%;
+}
+
 /* --- Services Section --- */
 
 #services {
-    margin: 1.75em var(--horiz-margin);
+    margin: var(--vert-margin) var(--horiz-margin);
     scroll-margin-top: 3em;
 }
 
@@ -211,6 +235,7 @@ p {
 }
 
 .service-card {
+    flex: 1;
     background-color: white;
     padding: 1em;
     border: 2px solid #D3D3D3;
@@ -232,7 +257,7 @@ p {
 #contact {
     display: flex;
     flex-direction: column;
-    margin: 1.75em var(--horiz-margin);
+    margin: var(--vert-margin) var(--horiz-margin);
     scroll-margin-top: 3em;
 }
 
@@ -296,6 +321,17 @@ footer a {
 
     .services-container {
         flex-direction: row;
+    }
+
+    #about {
+        flex-direction: row;
+    }
+    .about-img {
+        width: 13em;
+        height: auto;
+        clip-path: none;
+        display: block;
+        margin-bottom: 0;
     }
 }
 
