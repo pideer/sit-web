@@ -150,6 +150,10 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    animation: parallax 3s linear;
+    animation: parallax linear;
+    animation-timeline: scroll();
 }
 
 .home-container {
@@ -263,13 +267,24 @@ footer a {
     color: var(--primary-color);
 }
 
+/* --- Animations --- */
+
+@keyframes parallax {
+  from {
+    background-position: center 0px center;
+  }
+  to {
+    background-position: bottom -600px center;
+  }
+}
+
 /* --- Breakpoints for different screen sizes --- */
 
 /* default is mobile view */
-/* 480-768px is tablet view */
+/* 576-768px is tablet view */
 /* 1025px+ is desktop view */
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
     body {
         font-size: 20px;
     }
