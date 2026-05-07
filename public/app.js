@@ -1,9 +1,12 @@
 /* Changes active tab as you scroll. */
 const tabs = document.querySelectorAll('.tab');
 const sections = document.querySelectorAll('section');
+let clickTab = false;
 
 let currSection = 'home';
 window.addEventListener('scroll', () => {
+    if (clickTab) return;
+
     sections.forEach(section => {
         if (window.scrollY >= section.offsetTop - 80) {
             currSection = section.id;
@@ -39,15 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-
 /* Changes active tab from navigation bar. */
 setActive = (currentElement) => {
+    clickTab = true;
     const currentActive = document.querySelector('.active');
     if (currentActive) {
         currentActive.classList.remove('active');
     }
-
     currentElement.classList.add('active');
+    setTimeout(() => {
+        clickTab = false;
+    }, 500);
 };
 
 /* Toggles display of the hamburger menu. */
