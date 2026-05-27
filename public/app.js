@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     afterDate.setHours(0, 0, 0, 0);
 
     if (today < beforeDate || today > afterDate) {
-        header.innerHTML = "Confident Accounting for Business and Personal Clients";
-        body.innerHTML = "Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today!";
+        header.innerHTML = "Confident Accounting for Small Business and Personal Clients";
+        body.innerHTML = "Reliable bookkeeping, payroll, and tax services for small businesses and individuals. Get started today!";
     } else {
         header.innerHTML = `Get Ahead of the ${today.getFullYear()} Tax Season`;
         body.innerHTML = `Prepare for the upcoming ${today.getFullYear()} tax year and contact us to get started!`;

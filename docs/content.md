@@ -7,12 +7,12 @@
 Prepare for the upcoming 2026 Tax year and contact us to get started!
 
 ## option 2
-**Confident Accounting for Business and Personal Clients**
+**Confident Accounting for Small Business and Personal Clients**
 
-Reliable bookkeeping, payroll, and tax services for businesses and individuals. Get started today! 
+Reliable bookkeeping, payroll, and tax services for small businesses and individuals. Get started today! 
 
 # About Us
-SIT Accounting Services began in 2008 with a passion for helping low-income individuals accurately and confidently file their tax returns. What began as a mission to serve individual tax needs has grown into additionally supporting businesses, entrepreneurs, and high-income clients with comprehensive tax preparation and bookkeeping services.
+SIT Accounting Services began in 2008 with a passion for helping low-income individuals accurately and confidently file their tax returns. What began as a mission to serve individual tax needs has grown into additionally supporting small businesses, entrepreneurs, and high-income clients with comprehensive tax preparation and bookkeeping services.
 
 Over the years, we have remained committed to personalized service, integrity, and financial clarity for every client we serve.
 
@@ -24,8 +24,8 @@ We have been CPA licensed since 2005, providing professional expertise to prepar
 ## Business
 
 - bookkeeping: Keep your financial records organized and up to date with accurate bookkeeping services tailored to your business needs. We help track income, expenses, and transactions so you can focus on running your business.
-- payroll: Professional tax preparation services for individuals and businesses designed to maximize accuracy and minimize stress. We stay current with tax regulations to help ensure your returns are filed correctly and on time.
-- tax preparation: Simplify payroll with reliable processing and employee payment solutions for businesses of all sizes. We handle payroll calculations, tax withholdings, and reporting so your team gets paid accurately and on schedule.
+- tax preparation: Professional tax preparation services for individuals and businesses designed to maximize accuracy and minimize stress. We stay current with tax regulations to help ensure your returns are filed correctly and on time.
+- payroll: Simplify payroll with reliable processing and employee payment solutions for small businesses. We handle payroll calculations, tax withholdings, and reporting so your team gets paid accurately and on schedule.
 
 ## Individual
 
@@ -36,7 +36,7 @@ Our fees are based on the scope and complexity of your individual or business ne
 We believe in transparent pricing and will discuss all fees with you before work begins.
 
 # Contact Us
-Please email us at contact@sitaccounting.com or call us at (240) 752-3530 to get started. We offer flexible communication options to meet your needs, including in-person meetings, phone consultations, and secure teleconferencing.
+Please email us at contact@sitaccounting.com or call us at (826) 272-8265 to get started. We offer flexible communication options to meet your needs, including in-person meetings, phone consultations, and secure teleconferencing.
 
 # Footer
 Copyright © 2026 SIT Accounting Services, LLC. Made with love by the kids ❤️. Issues? email us at admin@sitaccounting.com
